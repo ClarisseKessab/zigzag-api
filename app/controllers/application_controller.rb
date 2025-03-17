@@ -1,9 +1,11 @@
-class ApplicationController < ActionController::API
-    before_action :authenticate_user!
+class ApplicationController < ActionController::Base
+  before_action :authenticate_user!
 
-    private
+  private
 
-    def authenticate_admin!
-      redirect_to(root_path, alert: "Accès réservé aux administrateurs.") unless current_user&.admin?
+  def authenticate_admin!
+    unless current_user&.admin?
+      redirect_to root_path, alert: "Accès refusé. Vous n'avez pas les permissions nécessaires."
     end
+  end
 end

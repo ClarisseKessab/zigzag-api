@@ -16,6 +16,12 @@ gem 'devise'
 
 gem 'ostruct'
 
+gem 'dotenv-rails'
+
+gem 'importmap-rails'
+
+
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
