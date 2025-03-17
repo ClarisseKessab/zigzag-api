@@ -14,6 +14,7 @@ gem "puma", ">= 5.0"
 # Devise for user
 gem 'devise'
 
+gem 'ostruct'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
